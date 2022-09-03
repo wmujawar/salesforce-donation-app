@@ -13,6 +13,10 @@ export default class MonthWiseDonationView extends LightningElement {
 
     columnData = [];
 
+    get isColumnDataPopulated() {
+        return this.columnData.length > 0;
+    }
+
     @api
     month = (new Date()).getMonth() + 1;
 
