@@ -12,10 +12,10 @@
     <label>Donation</label>
     <navType>Standard</navType>
     <tabs>standard-home</tabs>
-    <tabs>Event__c</tabs>
-    <tabs>Persona__c</tabs>
-    <tabs>Donation__c</tabs>
     <tabs>Donation_Report</tabs>
+    <tabs>Donation__c</tabs>
+    <tabs>Persona__c</tabs>
+    <tabs>Event__c</tabs>
     <uiType>Lightning</uiType>
     <utilityBar>Donation_UtilityBar</utilityBar>
 </CustomApplication>
