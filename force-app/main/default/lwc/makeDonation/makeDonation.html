@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Record Donation by individual person">
+        <div class="slds-var-m-around_medium">
+            <lightning-record-edit-form
+                object-api-name={objectName}
+                onsuccess={successHandler}
+                onerror={errorHandler}>
+                <lightning-input-field field-name={dateField}></lightning-input-field>
+                <lightning-input-field field-name={amountField}></lightning-input-field>
+                <lightning-input-field field-name={personaField}></lightning-input-field>
+                <div class="slds-text-align_center slds-var-m-bottom_medium">
+                    <lightning-button class="slds-var-m-right_x-small" label="Clear" onclick={resetHandler} variant="brand-outline"></lightning-button>
+                    <lightning-button label="Save" type="submit" variant="brand"></lightning-button>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </lightning-card>
+</template>

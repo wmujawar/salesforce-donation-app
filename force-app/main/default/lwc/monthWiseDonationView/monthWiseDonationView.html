@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="Current Month Donation list">
+        <div class="slds-var-m-around_medium">
+            <template if:true={columnData}>
+                <!-- sldsValidatorIgnore -->
+                <lightning-datatable
+                    key-field="Id"
+                    data={columnData}
+                    columns={columns}>
+                </lightning-datatable>
+                <!-- sldsValidatorIgnore -->
+            </template>
+            <template if:false={columnData}>
+                <div>No record to display for the current month</div>
+            </template>
+        </div>        
+    </lightning-card>    
+</template>
