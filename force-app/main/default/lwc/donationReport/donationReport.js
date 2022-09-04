@@ -15,11 +15,14 @@ export default class DonationReport extends LightningElement {
 
     handleChange(event) {
         const label = event.target.label;
+        const selectedValue = parseInt(event.detail.value);
 
         if (label === 'Month') {
-            this.monthValue = parseInt(event.detail.value);
+            if (this.monthValue != selectedValue)
+                this.monthValue = selectedValue;
         } else if (label === 'Year') {
-            this.yearValue = parseInt(event.detail.value);
+            if (this.yearValue != selectedValue)
+                this.yearValue = selectedValue;
         }
     }
 }
